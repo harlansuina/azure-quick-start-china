@@ -65,7 +65,7 @@
     "osDiskName": "[concat(variables('namingInfix'), 'osdisk')]",
     "addressPrefix": "10.2.0.0/24",
     "subnetPrefix": "10.2.0.32/27",
-    "virtualNetworkName": "[concat(variables('namingInfix'), 'vnet')]",
+    "virtualNetworkName": "knksvnet1",
     "publicIPAddressName": "[concat(variables('namingInfix'), 'pip')]",
     "subnetName": "[concat(variables('namingInfix'), 'subnet')]",
     "loadBalancerName": "[concat(variables('namingInfix'), 'lb')]",
