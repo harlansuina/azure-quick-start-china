@@ -64,10 +64,10 @@
     "vhdContainerName": "[concat(variables('namingInfix'), 'vhd')]",
     "osDiskName": "[concat(variables('namingInfix'), 'osdisk')]",
     "addressPrefix": "10.2.0.0/24",
-    "subnetPrefix": "10.2.0.32/27",
-    "virtualNetworkName": "[concat(variables('namingInfix'),'vnet')]",
+    "subnetPrefix": "10.2.0.0/27",
+    "virtualNetworkName": "vmssvnet",
     "publicIPAddressName": "[concat(variables('namingInfix'), 'pip')]",
-    "subnetName": "[concat(variables('namingInfix'), 'subnet')]",
+    "subnetName": "subnet1",
     "loadBalancerName": "[concat(variables('namingInfix'), 'lb')]",
     "publicIPAddressID": "[resourceId('Microsoft.Network/publicIPAddresses',variables('publicIPAddressName'))]",
     "lbID": "[resourceId('Microsoft.Network/loadBalancers',variables('loadBalancerName'))]",
@@ -167,7 +167,7 @@
       "properties": {
         "frontendIPConfigurations": [
           {
-            "name": "LoadBalancerFrontEnd",
+            "name": "LoadBalancerFrontEnd1",
             "properties": {
               "publicIPAddress": {
                 "id": "[variables('publicIPAddressID')]"
