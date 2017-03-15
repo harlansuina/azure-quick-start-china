@@ -78,7 +78,7 @@
     "natBackendPort": 3389,
     "nicName": "[concat(variables('namingInfix'), 'nic')]",
     "ipConfigName": "[concat(variables('namingInfix'), 'ipconfig')]",
-    "frontEndIPConfigID": "[concat(variables('lbID'),'/frontendIPConfigurations/loadBalancerFrontEnd')]",
+    "frontEndIPConfigID": "[concat(variables('lbID'),'/frontendIPConfigurations/loadBalancerFrontEnd1')]",
     "osType": {
       "publisher": "MicrosoftWindowsServer",
       "offer": "WindowsServer",
